@@ -16,5 +16,9 @@ TEST_CASE("String Calculator Test"){
   }
   SECTION("Two, comma delimited values, returned as sum test"){
     REQUIRE( stringCal("1,1") == 2);
+    REQUIRE( stringCal("2,1") == 3);
+    REQUIRE( stringCal("1,2") == 3);
+    REQUIRE( stringCal("1,10") == 11);
+
   }
 }
