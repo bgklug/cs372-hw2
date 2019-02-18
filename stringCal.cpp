@@ -6,8 +6,9 @@
 #include <string>
 
 int stringCal(std::string str){
-  if(str.empty())
+  if(str.empty()) {
     return 0;
-  else
+  } else {
     return stoi(str);
+  }
 }
