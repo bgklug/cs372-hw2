@@ -5,6 +5,11 @@
 #include "catch.hpp"
 #include "stringCal.h"
 
-TEST_CASE("Null String"){
+TEST_CASE("String Calculator Test"){
+  SECTION("Null string test"){
     REQUIRE( stringCal("") == 0);
+  }
+  SECTION("Single number returns value test"){
+    REQUIRE( stringCal("0") == 0);
+  }
 }
