@@ -11,5 +11,6 @@ TEST_CASE("String Calculator Test"){
   }
   SECTION("Single number returns value test"){
     REQUIRE( stringCal("0") == 0);
+    REQUIRE( stringCal("1") == 1);
   }
 }
